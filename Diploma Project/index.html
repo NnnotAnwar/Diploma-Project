@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Дипломный проект</title>
+   <link rel="shortcut icon" href="/img/file-excel-solid.svg" type="image/svg">
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/jquery-ui.min.css">
+   <link rel="stylesheet" href="css/pivot.css">
+   <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header">
+         <h1 class="header-text">Дипломный проект</h1>
+      </header>
+      <main class="main">
+         <div class="main-wrapper">
+            <div class="import-file">
+               <h2 class="import-text">Необходимо загрузить таблицу<br> для её визуализации (.json, .xlsx, .xls)</h2>
+               <label class="import-file-btn">
+                  <img src="img/file-excel-solid.svg" alt="excel-ico" class="import-excel">
+                  <p class="btn-text">Загрузить</p>
+                  <input type="file" style="display:none" name="importFile" id="importFile" accept=".json,.xlsx,.xls">
+               </label>
+               <p class="import-file-alttext">или воспользоваться демонстративным примером</p>
+            </div>
+            <div class="introduction">
+               <p class="introduction-text">Тема: Разработка модуля по обработки и визуализации данных в сводной
+                  таблице.</p>
+               <p class="introduction-text">Язык программирования: JavaScript
+                  <a class="js-icon" href="https://developer.mozilla.org/ru/docs/Web/JavaScript" target="_blank"></a>
+               </p>
+               <p class="introduction-text">Группа: ИС-448</p>
+               <p class="introduction-text">Студент: Кайрулла Ануар</p>
+               <p class="introduction-text">
+                  Примечание: Это веб-приложение принимает JSON-файлы и таблицы Excel.
+               </p>
+               <p class="introduction-text">Объект
+                  отображается на второй половине страницы в качестве сводной таблицы. Краткое руководство доступна по
+                  <a href="script/data/mps.json" style="text-decoration: underline;" download="Инструкция">ссылке</a>.
+               </p>
+            </div>
+         </div>
+         <div id="pivot">
+         </div>
+
+      </main>
+      <footer class="footer">
+         <a href="https://wa.me/qr/EIPZGYLSM33XE1" class="contact-adress" target="_blank">
+            Контактные данные: <i class="fa fa-whatsapp"></i>
+            +7 (747) 505-60-21
+         </a>
+      </footer>
+   </div>
+   <div id="popup" class="popup" style="display: none">
+      <div class="popup-content">
+         <p style="font-size: 24px; padding-bottom: 10px;">Выберите таблицу(лист):</p>
+         <div class="sheet-inputs">
+         </div>
+         <button id="sheetBtn" class="sheetBtn" style="margin-top: 5px;">
+            Выбрать
+         </button>
+      </div>
+   </div>
+   <script src="https://use.fontawesome.com/0c5365156c.js"></script>
+   <script src="script/libs/jquery-3.6.0.min.js"></script>
+   <script src="script/libs/jquery-ui.min.js"></script>
+   <script src="script/libs/pivot.min.js"></script>
+   <script src="script/libs/plotly-2.11.1.min.js"></script>
+   <script src="script/renderers/plotly_renderers.js"></script>
+   <script src="script/libs/xlsx.full.min.js"></script>
+   <script src="script/js/app.js"></script>
+</body>
+
+</html>

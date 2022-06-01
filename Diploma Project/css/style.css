@@ -1,0 +1,171 @@
+body {
+   font-family: Bahnschrift;
+}
+
+.wrapper {
+   display: flex;
+   flex-direction: column;
+   background-color: #eceaea;
+   width: 1200px;
+   margin: 0 auto;
+   height: 100%;
+}
+
+.header {
+   background-color: #748284;
+   height: 80px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   margin-bottom: 25px;
+}
+
+.header-text {
+   text-align: center;
+   color: #eceaea;
+   font-size: 36px;
+}
+
+.main {
+   width: 1200px;
+   padding: 50px;
+   margin: 0 auto;
+   background-color: #eceaea;
+}
+
+.main-wrapper {
+   display: flex;
+   justify-content: space-around;
+   margin-bottom: 20px;
+}
+
+.import-file {
+   width: 400px;
+}
+
+.import-text {
+   font-size: 26px;
+   font-weight: 400;
+   margin-bottom: 20px;
+}
+
+.import-file-btn {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   height: 150px;
+   width: 300px;
+   background-color: #59e7a5;
+   border-radius: 20px;
+   margin-bottom: 10px;
+   cursor: pointer;
+}
+
+.import-file-btn:hover {
+   background-color: #46bd86;
+}
+
+.import-excel {
+   display: block;
+   width: 50px;
+   margin: 0 auto;
+   filter: invert(84%) sepia(73%) saturate(14%) hue-rotate(309deg) brightness(109%) contrast(85%);
+}
+
+.btn-text {
+   text-align: center;
+   padding-top: 10px;
+   color: #edebeb;
+   font-size: 26px;
+   font-weight: 800;
+}
+
+.import-file-alttext {
+   color: #2e4bfb;
+   font-weight: 200;
+   text-decoration: underline;
+   cursor: pointer;
+}
+
+.introduction {
+   width: 400px;
+   height: 263px;
+   background-color: #fff;
+   padding: 15px;
+   border: #000 dashed;
+   font-size: 18px;
+}
+
+.introduction-text {
+   text-indent: 20px;
+   padding: 2px;
+}
+
+.js-icon {
+   color: rgb(239, 219, 32);
+   background-image: url(../img/JavaScript-Tutorial.svg);
+   background-repeat: no-repeat;
+   background-position: center;
+   display: inline-block;
+   width: 25px;
+   height: 25px;
+   vertical-align: bottom;
+}
+
+.footer {
+   display: flex;
+   flex-direction: column;
+   height: 80px;
+   background-color: #334447;
+   margin-top: auto;
+   justify-content: center;
+}
+
+.contact-adress {
+   color: #edebeb;
+   text-align: center;
+   font-size: 18px;
+}
+
+.contact-adress .fa {
+   font-size: 24px;
+}
+
+#pivot {
+   margin-bottom: 20px;
+}
+
+.popup {
+   width: 100%;
+   min-height: 100%;
+   background-color: rgba(0, 0, 0, 0.5);
+   overflow: hidden;
+   position: fixed;
+   top: 0px;
+}
+
+.popup .popup-content {
+   margin: 150px auto 0px auto;
+   width: 350px;
+   height: 340px;
+   padding: 10px;
+   background-color: #eeeeee;
+   border-radius: 5px;
+   box-shadow: 0px 0px 10px #000;
+}
+
+.sheet-choice {
+   padding: 5px;
+}
+
+.sheetBtn {
+   background-color: #4ac78d;
+   padding: 5px;
+   border: rgba(99, 99, 99, 0.619) 1px solid;
+   border-radius: 2px;
+}
+
+.sheetBtn:hover {
+   background-color: #3ea575;
+   border: rgba(130, 130, 130, 0.308) 1px solid;
+}
